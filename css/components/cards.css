@@ -1,0 +1,40 @@
+
+
+.teste{
+    display: flex;
+    gap: 24px
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+    background: var(--branco-gradiente-1);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.card p{
+    margin: 8px 0px;
+}
+
+.card img{
+    width: 100%;
+}
+.card:hover{
+    padding: 32px;
+}
+
+
+/*
+<div class="card">
+    <h4>LIMPEZA</h4>
+    <h3>Pesada / Pós obra</h3>
+    <p href="#">Um serviço completo e detalhado que alcança cantos, frestas e áreas que não são limpas com frequência. Recomendado periodicamente.</p>
+    <img src="/media/card-image01.png" alt="">
+</div>
+*/

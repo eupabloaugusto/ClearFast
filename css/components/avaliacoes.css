@@ -1,0 +1,56 @@
+
+.avaliacao{
+    max-width: 500px;
+    width: 100%;
+    background: var(--branco-100);
+    border-radius: 16px;
+}
+
+.persona{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-persona{
+    text-align: left;
+}
+
+.foto{
+    padding: 16px 16px 16px 32px;
+    background: var(--verde-300);
+    border-radius: 16px 100px 100px 0px;
+}
+
+.comentario{
+    padding-bottom: 16px;
+    margin: 0px 32px;
+    margin-top: 16px;
+}
+
+.chatbox{
+    margin: 0px 32px;
+}
+
+
+
+/*
+<div class="avaliacao">
+    <div class="persona">
+        <img class="foto" src="/media/foto-avaliacao-01.png" alt="">
+        <div class="info-persona">
+            <h4>Luana Carvalho</h4>
+            <p>Nail Designer</p>
+            <div class="star">
+                <img src="/assets/estrela-avaliação.svg" alt="">
+                <img src="/assets/estrela-avaliação.svg" alt="">
+                <img src="/assets/estrela-avaliação.svg" alt="">
+                <img src="/assets/estrela-avaliação.svg" alt="">
+                <img src="/assets/estrela-avaliação.svg" alt="">
+            </div>
+        </div>
+        <img class="chatbox" src="assets/chatbox.svg" alt="">
+    </div>
+    <p class="comentario">Simplesmente impecável! A equipe foi pontual, super educada e deixou minha casa brilhando. Recomendo de olhos fechados!"</p>
+</div>
+*/
