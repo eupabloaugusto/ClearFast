@@ -1,8 +1,8 @@
 
-@import url("/css/components/buttons.css");
-@import url("/css/components/cards.css");
-@import url("/css/components/avaliacoes.css");
-@import url("/css/components/faixaDeSecao.css");
+@import url("./css/components/buttons.css");
+@import url("./css/components/cards.css");
+@import url("./css/components/avaliacoes.css");
+@import url("./css/components/faixaDeSecao.css");
 
 header{
     padding: 24px 0px;
