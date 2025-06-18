@@ -1,38 +1,35 @@
-
-.avaliacao{
-    max-width: 500px;
-    width: 100%;
-    background: var(--branco-100);
-    border-radius: 16px;
+.avaliacao {
+  max-width: 500px;
+  width: 100%;
+  background: var(--branco-100);
+  border-radius: 16px;
 }
 
-.persona{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.persona {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.info-persona{
-    text-align: left;
+.info-persona {
+  text-align: left;
 }
 
-.foto{
-    padding: 16px 16px 16px 32px;
-    background: var(--verde-300);
-    border-radius: 16px 100px 100px 0px;
+.foto {
+  padding: 16px 16px 16px 32px;
+  background: var(--verde-300);
+  border-radius: 16px 100px 100px 0px;
 }
 
-.comentario{
-    padding-bottom: 16px;
-    margin: 0px 32px;
-    margin-top: 16px;
+.comentario {
+  padding-bottom: 16px;
+  margin: 0px 32px;
+  margin-top: 16px;
 }
 
-.chatbox{
-    margin: 0px 32px;
+.chatbox {
+  margin: 0px 32px;
 }
-
-
 
 /*
 <div class="avaliacao">

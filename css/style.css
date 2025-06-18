@@ -1,133 +1,133 @@
-
 @import url("../css/components/buttons.css");
 @import url("../css/components/cards.css");
 @import url("../css/components/avaliacoes.css");
 @import url("../css/components/faixaDeSecao.css");
+@import url(../css/components/span_imagem_hero.css);
 
-header{
-    padding: 24px 0px;
-    background: var(--branco-100);
+/* Header       ## INICIO ## */
+header {
+  padding: 24px 0px;
+  background: var(--branco-100);
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu, ul{
-    display: flex;
-    gap: 24px;
+.menu,
+ul {
+  display: flex;
+  gap: 24px;
 }
 
-li a{
-    color: var(--preto-100);
-    padding: 4px 0px;
-    transition: all .1s;
+li a {
+  color: var(--preto-100);
+  padding: 4px 0px;
+  transition: all 0.1s;
 }
 
-li a:hover{
-    border-bottom: 3px solid var(--roxo-100);
-    color: var(--roxo-100);
+li a:hover {
+  border-bottom: 3px solid var(--roxo-100);
+  color: var(--roxo-100);
+}
+/* Header       ## FIM ## */
+
+
+/* Hero      ## INICIO ## */
+.hero {
+  display: flex;
+  align-items: center;
+  height: 640px;
+  background: var(--branco-200);
 }
 
-
-
- 
-
-.hero{
-    display: flex;
-    align-items: center;
-    height: 640px;
-    background: var(--branco-200);
+.conteudo-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.conteudo-hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.span-strela {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
-.span-strela{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
+.texto-span {
+  color: var(--roxo-100);
 }
 
-.texto-span{
-    color: var(--roxo-100);
+.info-hero {
+  max-width: 780px;
+  width: 100%;
 }
 
-
-.info-hero{
-    max-width: 780px;
-    width: 100%;
+.info-hero h1 {
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
-.info-hero h1{
-    margin-bottom: 16px;
-    text-transform: uppercase;
+.desc-hero {
+  margin-bottom: 40px;
+}
+/* Hero      ## FIM ## */
+
+
+/* Quem Somos? (Section 2)      ## INICIO ## */
+section .sec-qs {
+  background: var(--branco-100);
 }
 
-.desc-hero{
-    margin-bottom: 40px;
+.quem-somos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 740px;
 }
 
-
-
-
-
-section .sec-qs{
-    background: var(--branco-100);
+#video {
+  cursor: pointer;
 }
 
-.quem-somos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 740px;
+.info-qs {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
 }
 
-#video{
-    cursor: pointer;
+.info-qs h2 {
+  margin-bottom: 16px;
 }
 
-.info-qs{
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    width: 100%;
+.info-qs .texto-qs {
+  margin-bottom: 40px;
+  max-width: 800px;
+  width: 100%;
+}
+.numeros-gerados {
+  display: flex;
+  justify-content: space-around;
 }
 
-.info-qs h2{
-    margin-bottom: 16px;
-}
-
-.info-qs .texto-qs{
-    margin-bottom: 40px;
-        max-width: 800px;
-    width: 100%;
-}
-.numeros-gerados{
-    display: flex;
-    justify-content: space-around;
-}
-
-.ng-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 234px;
+.ng-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 234px;
 }
 
 .ng-div h1,
-.ng-div p{
-    text-align: center;
+.ng-div p {
+  text-align: center;
 }
 
-.ng-div h1{
-    color: var(--verde-300);
-    font-weight: 600;
-    font-size: 72px;
+.ng-div h1 {
+  color: var(--verde-300);
+  font-weight: 600;
+  font-size: 72px;
 }
+/* Quem Somos? (Section 2)      ## FIM ## */
