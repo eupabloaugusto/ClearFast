@@ -1,166 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/branding.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="container menu">
-        <img src="./assets/Logo.svg" alt="" />
-        <ul>
-          <li><a href="#">Tela inicial</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Entrar em contato</a></li>
-        </ul>
-        <button class="button-menu">contratar nossos serviços</button>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/branding.css" />
 
-    <main>
-      <section class="hero">
-        <div class="container conteudo-hero">
-          <div class="info-hero">
-            <div class="span-strela">
-              <img src="./assets/estrela-span.svg" alt="" />
-              <p class="texto-span">Seu serviço especial de limpeza</p>
-            </div>
-            <h1>
-              Busque a melhor solução para manter sua casa limpa e perfumada
-            </h1>
-            <p class="desc-hero">
-              Seu parceiro de confiança para soluções de limpeza profissionais,
-              confiáveis ​​e acessíveis, proporcionando resultados impecáveis
-              ​​para residências, escritórios e espaços comerciais com cuidado e
-              precisão.
-            </p>
-            <button class="button-primario">
-              CONTRATAR NOSSOS SERVIÇOS
-              <img src="assets/seta-roxa.svg" alt="" />
-            </button>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container menu">
+      <img src="./assets/Logo.svg" alt="" />
+      <ul>
+        <li><a href="#sobre-nos">Sobre nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#solicitar-ocamento">Solicitar orçamento</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+      </ul>
+      <a class="button-menu">contratar nossos serviços</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container conteudo-hero">
+        <div class="info-hero">
+          <div class="span-strela">
+            <img src="./assets/estrela-span.svg" alt="" />
+            <p class="texto-span">Seu serviço especial de limpeza</p>
           </div>
-          <div class="box-img-hero">
-            <!-- SPAN FLUTUANTE HERO  ## INICIO ## -->
-            <div class="anmimacao-span-esquerda">
-              <span>
-                <img src="./assets/trofeu.svg" alt="" />
-                <p>Seu melhor serviço de serviços de limpeza</p>
-              </span>
-            </div>
-
-            <div class="anmimacao-span-direita">
-              <span>
-                <img src="./assets/security.svg" alt="" />
-                <p>Equipe de limpeza qualificada!</p>
-              </span>
-            </div>
-            <!-- SPAN FLUTUANTE HERO  ## FINAL ## -->
-            <img class="img-hero" src="./media/IMG Hero.png" alt="" />
-          </div>
+          <h1>
+            Busque a melhor solução para manter sua casa limpa e perfumada
+          </h1>
+          <p class="desc-hero">
+            Seu parceiro de confiança para soluções de limpeza profissionais,
+            confiáveis ​​e acessíveis, proporcionando resultados impecáveis
+            ​​para residências, escritórios e espaços comerciais com cuidado e
+            precisão.
+          </p>
+          <a href="" class="button-primario">
+            CONTRATAR NOSSOS SERVIÇOS
+            <img src="assets/seta-roxa.svg" alt="" />
+          </a>
         </div>
-      </section>
+        <div class="box-img-hero">
+          <!-- SPAN FLUTUANTE HERO  ## INICIO ## -->
+          <div class="anmimacao-span-esquerda">
+            <span>
+              <img src="./assets/trofeu.svg" alt="" />
+              <p>Seu melhor serviço de serviços de limpeza</p>
+            </span>
+          </div>
 
-      <!-- Barra de letreiro  ## INICIO ## -->
-      <div class="bg-slider">
-        <div class="container slider">
-          <div
-            class="barra"
-            style="--width: 100%; --height: 50px; --quantity: 10"
-          >
-            <div class="item" style="--position: 1">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 2">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 3">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 4">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 5">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 6">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 7">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 8">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 9">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
-            <div class="item" style="--position: 10">
-              <img src="./assets/limpeza-profissional.svg" alt="" />
-            </div>
+          <div class="anmimacao-span-direita">
+            <span>
+              <img src="./assets/security.svg" alt="" />
+              <p>Equipe de limpeza qualificada!</p>
+            </span>
+          </div>
+          <!-- SPAN FLUTUANTE HERO  ## FINAL ## -->
+          <img class="img-hero" src="./media/IMG Hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de letreiro  ## INICIO ## -->
+    <div class="bg-slider">
+      <div class="container slider">
+        <div class="barra" style="--width: 100%; --height: 50px; --quantity: 10">
+          <div class="item" style="--position: 1">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
           </div>
         </div>
       </div>
-      <!-- Barra de letreiro  ## FIM ## -->
+    </div>
+    <!-- Barra de letreiro  ## FIM ## -->
 
-      <section class="sec-qs">
-        <div class="container quem-somos">
-          <div class="play-video" id="play_video">
-            <img id="video" src="./media/play-video.png" alt="" />
+    <section class="sec-qs" id="sobre-nos">
+      <div class="container quem-somos">
+        <div class="play-video" id="play_video">
+          <img class="img-video" src="./media/video.webp" alt="" />
+        </div>
+        <div class="info-qs">
+          <div class="span-strela">
+            <img src="./assets/estrela-span.svg" alt="" />
+            <p class="texto-span">Quem somos nós?</p>
           </div>
-          <div class="info-qs">
+          <h2>Sua primeira escolha para serviços de limpeza</h2>
+          <p class="texto-qs">
+            Somos especialistas em transformar lares com serviços de limpeza
+            eficientes, confiáveis e personalizados. Nossa equipe treinada
+            cuida de cada detalhe para garantir um ambiente sempre limpo,
+            seguro e acolhedor. Com agilidade, atenção e compromisso,
+            entregamos muito mais do que limpeza — entregamos tranquilidade
+            para você e sua família. <br /><br />
+            Atendemos com planos flexíveis, ideais para quem busca praticidade
+            sem abrir mão da qualidade. Cada serviço é realizado com produtos
+            seguros, profissionais qualificados e total respeito ao seu
+            espaço. Já são mais de 6.500 limpezas concluídas com excelência e
+            99% de aprovação dos nossos clientes. Porque para nós, limpeza é
+            sinônimo de cuidado.
+          </p>
+          <!-- Contador ScrollTrigger  ## INICIO ## -->
+          <div class="numeros-gerados">
+            <div class="ng-div">
+              <h1 id="srvc">0</h1>
+              <p>Serviços completos</p>
+            </div>
+            <div class="ng-div">
+              <h1 id="cidade">0</h1>
+              <p>Cidades atendidas</p>
+            </div>
+            <div class="ng-div">
+              <h1 id="avaliacao">0</h1>
+              <p>de avaliação média</p>
+            </div>
+          </div>
+          <!-- Contador ScrollTrigger  ## FINAL ## -->
+        </div>
+      </div>
+    </section>
+
+    <section class="nossas-missoes" id="servicos">
+      <div class="container">
+        <div class="nm-info-top">
+          <div class="titulo-nm">
             <div class="span-strela">
-              <img src="./assets/estrela-span.svg" alt="" />
-              <p class="texto-span">Quem somos nós?</p>
+              <img src="./assets/estrela-span-verde.svg" alt="" />
+              <p class="texto-span">Nossas missões </p>
             </div>
-            <h2>Sua primeira escolha para serviços de limpeza</h2>
-            <p class="texto-qs">
-              Somos especialistas em transformar lares com serviços de limpeza
-              eficientes, confiáveis e personalizados. Nossa equipe treinada
-              cuida de cada detalhe para garantir um ambiente sempre limpo,
-              seguro e acolhedor. Com agilidade, atenção e compromisso,
-              entregamos muito mais do que limpeza — entregamos tranquilidade
-              para você e sua família. <br /><br />
-              Atendemos com planos flexíveis, ideais para quem busca praticidade
-              sem abrir mão da qualidade. Cada serviço é realizado com produtos
-              seguros, profissionais qualificados e total respeito ao seu
-              espaço. Já são mais de 6.500 limpezas concluídas com excelência e
-              99% de aprovação dos nossos clientes. Porque para nós, limpeza é
-              sinônimo de cuidado.
-            </p>
-            <!-- Contador ScrollTrigger  ## INICIO ## -->
-            <div class="numeros-gerados">
-              <div class="ng-div">
-                <h1 id="srvc">0</h1>
-                <p>Serviços completos</p>
-              </div>
-              <div class="ng-div">
-                <h1 id="cidade">0</h1>
-                <p>Cidades atendidas</p>
-              </div>
-              <div class="ng-div">
-                <h1 id="avaliacao">0</h1>
-                <p>de avaliação média</p>
-              </div>
-            </div>
-            <!-- Contador ScrollTrigger  ## FINAL ## -->
+            <h2>Dê uma olhada no que nós oferecemos</h2>
+          </div>
+          <a class="button-secundario" href="">VER OUTROS SERVIÇOS <img src="./assets/seta-branca.svg" alt=""></a>
+        </div>
+        <div class="card-group">
+          <div class="card card-1">
+            <h4>LIMPEZA</h4>
+            <h3>Pesada / Pós obra</h3>
+            <p href="#">Ideal para manter a casa sempre em ordem. Inclui limpeza de superfícies, pisos, banheiros,
+              cozinha e áreas comuns.</p>
+            <img src="./media/card-image01.webp" alt="">
+          </div>
+          <div class="card card-2">
+            <h4>LIMPEZA</h4>
+            <h3>Profunda</h3>
+            <p href="#">Um serviço completo e detalhado que alcança cantos, frestas e áreas que não são limpas com
+              frequência. Recomendado periodicamente.</p>
+            <img src="./media/card-image02.webp" alt="">
+          </div>
+          <div class="card card-3">
+            <h4>LIMPEZA</h4>
+            <h3>Pós-evento</h3>
+            <p href="#">Organizamos e limpamos sua casa após festas, jantares ou reuniões, deixando tudo impecável
+              novamente.</p>
+            <img src="./media/card-image03.webp" alt="">
+          </div>
+          <div class="card card-4">
+            <h4>LIMPEZA</h4>
+            <h3>Vidros e Janelas</h3>
+            <p href="#">Transparência e brilho com segurança e técnica, tanto em janelas internas quanto externas
+              (quando acessível).</p>
+            <img src="./media/card-image04.webp" alt="">
           </div>
         </div>
-      </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+    </section>
+
+    <!-- Barra de letreiro  ## INICIO ## -->
+    <div class="bg-slider">
+      <div class="container slider">
+        <div class="barra" style="--width: 100%; --height: 50px; --quantity: 10">
+          <div class="item" style="--position: 1">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="./assets/limpeza-profissional.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Barra de letreiro  ## FIM ## -->
+  </main>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

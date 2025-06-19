@@ -2,7 +2,7 @@
 @import url("../css/components/cards.css");
 @import url("../css/components/avaliacoes.css");
 @import url("../css/components/faixaDeSecao.css");
-@import url(../css/components/span_imagem_hero.css);
+@import url("../css/components/span_imagem_hero.css");
 
 /* Header       ## INICIO ## */
 header {
@@ -34,12 +34,12 @@ li a:hover {
 }
 /* Header       ## FIM ## */
 
-
 /* Hero      ## INICIO ## */
 .hero {
   display: flex;
   align-items: center;
-  height: 640px;
+  height: fit-content;
+  padding: 80px 0px;
   background: var(--branco-200);
 }
 
@@ -75,21 +75,25 @@ li a:hover {
 }
 /* Hero      ## FIM ## */
 
-
 /* Quem Somos? (Section 2)      ## INICIO ## */
 section .sec-qs {
   background: var(--branco-100);
+  
 }
 
 .quem-somos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 740px;
+  height: fit-content;
+  padding: 80px 0px;
 }
 
-#video {
+.img-video {
   cursor: pointer;
+  position: relative;
+  transition: all 1s ease;
+  width: 665px;
 }
 
 .info-qs {
@@ -131,3 +135,35 @@ section .sec-qs {
   font-size: 72px;
 }
 /* Quem Somos? (Section 2)      ## FIM ## */
+
+/* Nossas missões (Section 3)      ## INICIO ## */
+.nm-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.nossas-missoes {
+  height: fit-content;
+  padding: 80px 0px;
+  width: 100%;
+  background: var(--roxo-gradiente);
+  overflow: hidden;
+}
+
+.nossas-missoes h2 {
+  color: var(--branco-100);
+  font-weight: 500;
+}
+
+.titulo-nm p {
+  color: var(--verde-100);
+  font-weight: 200;
+}
+
+.card-group{
+  display: flex;
+  gap: 24px;
+}
+/* Nossas missões (Section 3)      ## FIM ## */

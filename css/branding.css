@@ -29,11 +29,9 @@ h1,
 h2,
 h3,
 h4,
-body,
-span,
 a{
     line-height: 128%;
-    letter-spacing: 0.8%;
+    letter-spacing: 5%;
 }
 
 h1{
@@ -42,6 +40,7 @@ h1{
 
 h2{
     font-size: 40px;
+    font-weight: 600;
 }
 
 h3{

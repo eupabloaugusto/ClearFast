@@ -1,4 +1,4 @@
-// Video Section 02
+// Video Section 02  ---------||--------
 
 const video = document.querySelector("#play_video");
 
@@ -10,9 +10,7 @@ function videoPlay(evt) {
   video.innerHTML = `<iframe width="665" height="600" border-radius="8px" src="https://www.youtube.com/embed/Q_f4076w5y0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 }
 
-
-
-// Contagem Gsap - ScrollTrigger
+// Contagem Gsap - ScrollTrigger  ---------||--------
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,3 +54,69 @@ gsap.to(contador, {
       contador.valor_avaliacao.toFixed(1) + "/5";
   },
 });
+
+// Scroll Out Gsap - ScrollTrigger  ---------||--------
+gsap.fromTo(
+  ".card-1",
+  { y: 500, opacity: -10 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.3,
+    ease: "linear",
+    scrollTrigger: {
+      trigger: ".card-group",
+      start: "top 100%",
+      toggleActions: "play none none reverse",
+    },
+  }
+);
+
+gsap.fromTo(
+  ".card-2",
+  { y: 500, opacity: -10 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.4,
+    ease: "linear",
+    scrollTrigger: {
+      trigger: ".card-group",
+      start: "top 100%",
+      toggleActions: "play none none reverse",
+    },
+  }
+);
+
+gsap.fromTo(
+  ".card-3",
+  { y: 500, opacity: -10 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.5,
+    ease: "linear",
+    scrollTrigger: {
+      trigger: ".card-group",
+      start: "top 100%",
+      toggleActions: "play none none reverse",
+    },
+  }
+);
+
+gsap.fromTo(
+  ".card-4",
+  { y: 500, opacity: -10 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.6,
+    ease: "linear",
+    scrollTrigger: {
+      trigger: ".card-group",
+      start: "top 100%",
+      toggleActions: "play none none reverse",
+    },
+  }
+);
+// Scroll Out Gsap - ScrollTrigger            ## FINAL ## //
