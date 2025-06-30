@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width: 412px) {
+.foto{
+  max-width: 130px;
+}
 .star{
   gap: 6px;
 }
