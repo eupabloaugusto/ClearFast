@@ -148,10 +148,8 @@ gsap.fromTo(
     },
   }
 );
-// Scroll Out Gsap - ScrollTrigger            ## FINAL ## //
 
-
-
+// Carrossel de Avaliações - Swiper  ---------||--------
 var swiper = new Swiper(".mySwiper", {
       centeredSlides: true,
       loop: true,
@@ -162,6 +160,10 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: true,
       },
       breakpoints: {
+    393: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
     412: {
       slidesPerView: 1,
       spaceBetween: 24,
