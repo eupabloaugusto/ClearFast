@@ -61,7 +61,7 @@ gsap.to(contador, {
   duration: 3,
   scrollTrigger: {
     trigger: ".numeros-gerados",
-    start: "top 100%",
+    start: "top 110%",
     ease: "steps(30)",
   },
   onUpdate: () => {

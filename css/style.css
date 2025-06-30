@@ -38,7 +38,7 @@ li a:hover {
   display: flex;
   align-items: center;
   height: fit-content;
-  background: var(--branco-200);
+  background: var(--branco-gradiente-1);
 }
 
 .conteudo-hero{
@@ -96,8 +96,8 @@ video{
 }
 
 /* Quem Somos? (Section 2) */
-section .sec-qs {
-  background: var(--branco-100);
+.sec-qs {
+  background: var( --branco-gradiente-2);
 }
 
 .quem-somos {
@@ -442,5 +442,4 @@ form{
 .avaliacoes{
   padding: 40px 0px;
 }
-
 }
