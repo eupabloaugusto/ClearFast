@@ -20,6 +20,7 @@
   padding: 16px 16px 16px 32px;
   background: var(--verde-300);
   border-radius: 16px 100px 100px 0px;
+
 }
 
 .star{
@@ -38,8 +39,8 @@
 }
 
 @media screen and (max-width: 412px) {
-  .foto {
-  width: 130px;
+.foto{
+  max-width: 130px;
 }
 .star{
   gap: 6px;
