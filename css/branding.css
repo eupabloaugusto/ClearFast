@@ -39,6 +39,12 @@ a{
     letter-spacing: 5%;
 }
 
+p.texto-span{
+    color: var(--roxo-100);
+    font-size: 14px;
+}
+
+
 h1{
     font-size: 48px;
 }
@@ -57,7 +63,7 @@ h3,
 h4,
 .sub-titulo2{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--preto-100);
 }
 
@@ -71,14 +77,47 @@ p,
 
 span{
     font-size: 14px;
+    color: var(--roxo-100);
 }
 
-a{
+a,
+.paragrafo{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: .15px;
 }
 
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 412px) {
+
+h1,
+h2,
+h3,
+h4,
+.sub-titulo,
+.sub-titulo2,
+.paragrafo,
+a{
+    line-height: 115%;
+    letter-spacing: 2.5%;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3,
+.sub-titulo{
+    font-size: 22px;
+}
+
+h4,
+.sub-titulo2{
+    font-size: 18px;
+}
+
 }

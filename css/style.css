@@ -1,9 +1,7 @@
-@import url("./screen/tablet.css");
 @import url("../css/components/buttons.css");
 @import url("../css/components/cards.css");
 @import url("../css/components/avaliacoes.css");
 @import url("../css/components/faixaDeSecao.css");
-@import url("../css/components/span_imagem_hero.css");
 
 /* Header       ## INICIO ## */
 header {
@@ -47,13 +45,6 @@ li a:hover {
   display: flex;
   align-items: center;
 }
-.gradiente{
-position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-
-}
 
 .box-video-hero{
   position: relative;
@@ -68,7 +59,6 @@ video{
   position: absolute;
   right: 0;
   height: 100%;
-  width: 100%px;
   z-index: 1;
   mask-image: linear-gradient(to right, transparent, white 90%, transparent);
 }
@@ -108,7 +98,6 @@ video{
 /* Quem Somos? (Section 2) */
 section .sec-qs {
   background: var(--branco-100);
-  
 }
 
 .quem-somos {
@@ -126,6 +115,7 @@ section .sec-qs {
   transition: all 1s ease;
   width: 100%;
   max-width: 665px;
+  border-radius: 16px;
 }
 
 .video-play{
@@ -142,14 +132,15 @@ section .sec-qs {
   width: 100%;
 }
 
+.info-qs .span-strela{
+  margin-top: 32px;
+}
 .info-qs h2 {
   margin-bottom: 16px;
 }
 
 .info-qs .texto-qs {
   margin-bottom: 40px;
-  max-width: 800px;
-  width: 100%;
 }
 .numeros-gerados {
   display: flex;
@@ -168,10 +159,9 @@ section .sec-qs {
   text-align: center;
 }
 
-.ng-div h1 {
+.ng-div h1{
   color: var(--verde-300);
-  font-weight: 600;
-  font-size: 72px;
+  font-weight: 700;
 }
 
 /* Nossas missões (Section 3) */
@@ -195,6 +185,10 @@ section .sec-qs {
 .nossas-missoes h2 {
   color: var(--branco-100);
   font-weight: 500;
+}
+
+.titulo-nm p.texto-span{
+    color: var(--verde-100);
 }
 
 .titulo-nm p {
@@ -321,3 +315,132 @@ textarea{
   margin-bottom: 8px;
 }
 
+/* Avaliações (Section 05) */
+.avaliacoes{
+  padding: 80px 0;
+}
+
+.titulo-avaliacao{
+  margin-bottom: 48px;
+}
+
+
+
+.swiper {
+width: 100%;
+height: 100%;
+border-radius: 16px;
+}
+
+.swiper-slide {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+@media screen and (max-width: 412px) {
+
+header{
+  display: none;
+}
+
+/* Responsividade Mobile - Section 01 */
+.box-video-hero{
+  height: 660px;
+}
+.info-hero{
+  top: 200px;
+  max-width: 396px;
+  width: 100%;
+}
+
+.box-video-hero{
+  mask-image: none;
+}
+
+video{
+  width: calc(100% + 32px);
+  margin: 0 -16px 0 -16px;
+  height: fit-content;
+
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 80%);
+}
+
+/* Responsividade Mobile - Section 02 */
+.quem-somos{
+  padding: 40px 0;
+}
+
+.img-video{
+  width: 100%;
+  max-width: 365px;
+  height: 270px;
+}
+
+.video-play{
+  width: 100%;
+  max-width: 365px;
+  height: 270px;
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.quem-somos{
+  justify-content: center;
+}
+
+.info-qs{
+  display: block;
+  max-width: 396px;
+  width: 100%;
+}
+
+/* Responsividade Mobile - Section 03 */
+.nossas-missoes{
+  padding: 40px 0;
+}
+
+.card-group{
+  justify-content: center;
+}
+
+/* Responsividade Mobile - Section 04 */
+.secao-de-contato{
+  padding: 30px 0px 0px 0px;
+}
+
+.img-contato{
+  display: none;
+}
+
+.banner-com-texto{
+  margin-bottom: 40px;
+}
+
+.titulo-no-banner{
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.bloco-form{
+  flex-wrap: wrap;
+}
+
+input{
+  border-radius: 10px;
+}
+
+form{
+  max-width: 366px;
+}
+
+/* Responsividade Mobile - Section 05 */
+.avaliacoes{
+  padding: 40px 0px;
+}
+
+}

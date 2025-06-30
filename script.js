@@ -11,7 +11,7 @@ gsap.fromTo(
     ease: "line",
     scrollTrigger: {
       trigger: ".quem-somos",
-      start: "top 80%",
+      start: "top 85%",
       toggleActions: "play none none reverse",
     },
   }
@@ -149,3 +149,30 @@ gsap.fromTo(
   }
 );
 // Scroll Out Gsap - ScrollTrigger            ## FINAL ## //
+
+
+
+var swiper = new Swiper(".mySwiper", {
+      centeredSlides: true,
+      loop: true,
+      watchSlidesProgress: true,
+      freeMode: true,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: true,
+      },
+      breakpoints: {
+    412: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1650: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    }
+  }
+});

@@ -28,6 +28,12 @@
   transform: scale(1.05) !important;
 }
 
+@media screen and (max-width: 412px) {
+    .card{
+        max-width: calc(100% - 32px);
+    }
+}
+
 /*
 <div class="card">
     <h4>LIMPEZA</h4>
