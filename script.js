@@ -1,5 +1,23 @@
 // Video Section 02  ---------||--------
 
+gsap.fromTo(
+  ".img-video",
+  {x: -100, opacity: 0, scale: 0.5},
+  {
+    x: 1,
+    scale: 1,
+    opacity: 1,
+    duration:.3,
+    ease: "line",
+    scrollTrigger: {
+      trigger: ".quem-somos",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+  }
+);
+
+
 const video = document.querySelector("#play_video");
 
 video.addEventListener("click", videoPlay);
@@ -7,11 +25,19 @@ video.addEventListener("click", videoPlay);
 function videoPlay(evt) {
   console.log("Clicou no vídeo!");
   evt.currentTarget.removeEventListener("click", videoPlay);
-  video.innerHTML = `<iframe width="665" height="600" border-radius="8px" src="https://www.youtube.com/embed/Q_f4076w5y0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+  video.innerHTML = `<iframe class="video-play" 
+  src="https://www.youtube.com/embed/Q_f4076w5y0?autoplay=1&loop=1" 
+  frameborder="0" 
+  allow="accelerometer;
+  autoplay;
+  encrypted-media;
+  gyroscope;
+  picture-in-picture;
+  web-share" referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>`;
 }
 
 // Contagem Gsap - ScrollTrigger  ---------||--------
-
 gsap.registerPlugin(ScrollTrigger);
 
 let contador = { valorSrvc: 0, valor_cidade: 0, valor_avaliacao: 0 };
@@ -21,7 +47,8 @@ gsap.to(contador, {
   duration: 3,
   scrollTrigger: {
     trigger: ".numeros-gerados",
-    start: "top 80%",
+    start: "top 100%",
+    ease: "back.inOut(1.7)",
   },
   onUpdate: () => {
     document.getElementById("srvc").textContent =
@@ -34,7 +61,8 @@ gsap.to(contador, {
   duration: 3,
   scrollTrigger: {
     trigger: ".numeros-gerados",
-    start: "top 80%",
+    start: "top 100%",
+    ease: "steps(30)",
   },
   onUpdate: () => {
     document.getElementById("cidade").textContent =
@@ -45,9 +73,10 @@ gsap.to(contador, {
 gsap.to(contador, {
   valor_avaliacao: 4.8,
   duration: 3,
+  ease: "steps(30)",
   scrollTrigger: {
     trigger: ".numeros-gerados",
-    start: "top 80%",
+    start: "top 100%",
   },
   onUpdate: () => {
     document.querySelector("#avaliacao").textContent =

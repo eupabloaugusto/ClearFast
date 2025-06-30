@@ -1,38 +1,32 @@
 
 
-.teste{
-    display: flex;
-    gap: 24px
-}
-
 .card{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     flex-direction: column;
     max-width: 390px;
+    min-width: 286px;
     flex: 1;
     padding: 16px;
-    background: var(--branco-gradiente-1);
+    background: var(--branco-200);
     border-radius: 16px;
     cursor: pointer;
     transition: all .5s ease;
+    box-sizing: border-box;
 }
 
 .card p{
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     margin: 8px 0px;
 }
 
 .card img{
     width: 100%;
-}
-.card:hover{
-    padding: 0px 32px;
+    margin-top: auto;
 }
 
+.card:hover {
+  transform: scale(1.05) !important;
+}
 
 /*
 <div class="card">

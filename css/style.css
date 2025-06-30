@@ -1,3 +1,4 @@
+@import url("./screen/tablet.css");
 @import url("../css/components/buttons.css");
 @import url("../css/components/cards.css");
 @import url("../css/components/avaliacoes.css");
@@ -39,14 +40,37 @@ li a:hover {
   display: flex;
   align-items: center;
   height: fit-content;
-  padding: 80px 0px;
   background: var(--branco-200);
 }
 
-.conteudo-hero {
+.conteudo-hero{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.gradiente{
+position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.box-video-hero{
+  position: relative;
+  width: 100%;
+  max-width: 1650px;
+  display: flex;
+  height: 85vh;
+  mask-image: linear-gradient(to right, transparent, white 60%);
+}
+
+video{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%px;
+  z-index: 1;
+  mask-image: linear-gradient(to right, transparent, white 90%, transparent);
 }
 
 .span-strela {
@@ -61,21 +85,27 @@ li a:hover {
 }
 
 .info-hero {
-  max-width: 780px;
+  max-width: 690px;
   width: 100%;
+  position: absolute;
+  z-index: 3;
 }
 
+.info-hero p{
+  color: var(--preto-100);
+  max-width: 590px;
+  width: 100%;
+}
 .info-hero h1 {
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 
 .desc-hero {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
-/* Hero      ## FIM ## */
 
-/* Quem Somos? (Section 2)      ## INICIO ## */
+/* Quem Somos? (Section 2) */
 section .sec-qs {
   background: var(--branco-100);
   
@@ -83,6 +113,7 @@ section .sec-qs {
 
 .quem-somos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: fit-content;
@@ -93,7 +124,15 @@ section .sec-qs {
   cursor: pointer;
   position: relative;
   transition: all 1s ease;
-  width: 665px;
+  width: 100%;
+  max-width: 665px;
+}
+
+.video-play{
+  width: 100vh;
+  max-width: 665px;
+  height:600px;
+  border-radius: 16px;
 }
 
 .info-qs {
@@ -134,17 +173,18 @@ section .sec-qs {
   font-weight: 600;
   font-size: 72px;
 }
-/* Quem Somos? (Section 2)      ## FIM ## */
 
-/* Nossas missões (Section 3)      ## INICIO ## */
+/* Nossas missões (Section 3) */
 .nm-info-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: end;
   margin-bottom: 48px;
 }
 
 .nossas-missoes {
+
   height: fit-content;
   padding: 80px 0px;
   width: 100%;
@@ -164,6 +204,120 @@ section .sec-qs {
 
 .card-group{
   display: flex;
+
+  flex-wrap: wrap;
   gap: 24px;
 }
-/* Nossas missões (Section 3)      ## FIM ## */
+
+/* Entre em contato (Section 04) */
+.secao-de-contato{
+  background: var(--verde-gradiente);
+  padding: 80px 0px;
+}
+
+.banner-com-texto{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 64px;
+}
+.img-contato{
+  width: 100%;
+}
+.titulo-no-banner{
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  z-index: 1;
+  bottom: 16px;
+  left: 16px;
+}
+
+.bloco-form{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 32px;
+}
+
+form{
+  width: 100%;
+  max-width: 650px;
+}
+
+label{
+  margin-bottom: 8px;
+}
+input{
+  padding: 8px 10px;
+  border: 1px solid var(--cinza-300);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo-mensagem::after{
+  content: "(Opcional)";
+  color: var(--cinza-300);
+  margin-left: 16px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+textarea{
+  padding: 8px 10px;
+  border: 1px solid var(--cinza-300);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 650px;
+  height: 132px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.form-e-info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-sobre-orcamento{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-orcamento{
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: first baseline;
+  box-sizing: border-box;
+  margin: 40px 0px;
+  gap: 16px;
+}
+
+.info-orcamento-lista{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-orcamento-lista li{
+  list-style: disc;
+  margin-left: 64px;
+}
+
+.info-duvida-titulo{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+

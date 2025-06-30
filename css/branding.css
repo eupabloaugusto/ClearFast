@@ -2,11 +2,12 @@
     --verde-100: #19EB90;
     --verde-200: #28AE74;
     --verde-300: #134B32;
+    --verde-400: #14291f;
     --verde-gradiente: linear-gradient(103deg, #35F575 30.5%, #38FF9C 70.07%), var(--verde-100, #19EB90);
     --roxo-100: #4B1658;
     --roxo-200: #300B3A;
     --roxo-300: #380E42;
-    --roxo-gradiente: linear-gradient(180deg, #380E42 0%, #22042A 100%);
+    --roxo-gradiente: linear-gradient(90deg, #380E42 0%, #8E24A8 100%);
     --branco-100: #ebf1f1;
     --branco-200: #E1E5E5;
     --branco-gradiente-1: linear-gradient(95deg, #C6D0CF 5.39%, #e4e9e9 44.72%);
@@ -20,7 +21,8 @@
 h1,
 h2,
 h3,
-h4{
+h4,
+.sub-titulo{
     color: var(--preto-100);
     text-transform: uppercase;
 }
@@ -29,6 +31,9 @@ h1,
 h2,
 h3,
 h4,
+.sub-titulo,
+.sub-titulo2,
+.paragrafo,
 a{
     line-height: 128%;
     letter-spacing: 5%;
@@ -43,17 +48,21 @@ h2{
     font-weight: 600;
 }
 
-h3{
+h3,
+.sub-titulo{
     font-size: 32px;
     font-weight: 600;
 }
 
-h4{
-    font-size: 24px;
-    font-weight: 600;
+h4,
+.sub-titulo2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--preto-100);
 }
 
-p{
+p,
+.paragrafo{
     font-size: 16px;
     color: var(--cinza-300);
     line-height: 148%;
@@ -67,4 +76,9 @@ span{
 a{
     font-size: 16px;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 600px) {
+    
 }
