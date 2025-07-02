@@ -10,7 +10,7 @@ html{
   scroll-behavior: smooth;
 }
 
-.container {
+#container {
   margin: 0 auto;
   max-width: 1624px;
   width: 100%;

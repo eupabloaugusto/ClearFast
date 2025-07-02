@@ -83,7 +83,6 @@ video{
 
 .info-hero p{
   color: var(--preto-100);
-  max-width: 590px;
   width: 100%;
 }
 .info-hero h1 {
@@ -98,6 +97,7 @@ video{
 /* Quem Somos? (Section 2) */
 .sec-qs {
   background: var( --branco-gradiente-2);
+  padding: 80px 0;
 }
 
 .quem-somos {
@@ -230,7 +230,7 @@ video{
 .bloco-form{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   gap: 32px;
 }
 
@@ -318,13 +318,15 @@ textarea{
 /* Avaliações (Section 05) */
 .avaliacoes{
   padding: 80px 0;
+  background: var(--verde-200);
 }
 
+.titulo-avaliacao .span-strela p{
+  color: var(--branco-100);
+}
 .titulo-avaliacao{
   margin-bottom: 48px;
 }
-
-
 
 .swiper {
 width: 100%;
@@ -339,20 +341,62 @@ justify-content: center;
 align-items: center;
 }
 
+/* Perguntas Frequentes (FAQ) (Section 6) */
+.faq-section{
+  padding: 80px 0;
+  background: var(--branco-100);
+}
 
-@media screen and (max-width: 412px) {
+.titulo-faq{
+  margin-bottom: 48px;
+}
+.acordion{
+  box-sizing: border-box;
+  width: 80%;
+  margin-bottom: 24px;
+}
 
+.titulo-accordion{
+  width: 100%;
+  text-align: left;
+  background: var(--branco-gradiente-2);
+  border: none;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descricao-accordion{
+  display: none;
+  width: 100%;
+  text-align: left;
+  background: var(--cinza-100);
+  padding: 16px;
+  color: var(--preto-100);
+  transition: opacity .3s;
+}
+
+.ativo{
+  display: block;
+}
+
+
+
+
+
+/* Responsividade Tablet */
+@media screen and (max-width: 1024px) {
 header{
   display: none;
 }
 
 /* Responsividade Mobile - Section 01 */
 .box-video-hero{
-  height: 660px;
+  height: 95vh;
 }
 .info-hero{
-  top: 200px;
-  max-width: 396px;
+  top: 240px;
+  max-width: 940px;
   width: 100%;
 }
 
@@ -361,16 +405,123 @@ header{
 }
 
 video{
+  align-items: flex-start;
   width: calc(100% + 32px);
   margin: 0 -16px 0 -16px;
   height: fit-content;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 80%);
+}
 
+
+
+/* Responsividade Mobile - Section 02 */
+.quem-somos{
+  padding: 40px 0;
+  align-items: start;
+  width: 100%;
+}
+
+.img-video{
+  width: 100%;
+  max-width: 600px;
+  height: 540px;
+}
+
+.video-play{
+  width: 600px;
+  height: 540px;
+  display: inline-flex;
+
+}
+
+.sec-qs {
+  padding: 40px 0;
+}
+
+.info-qs{
+  display: block;
+  max-width: 940px;
+  width: 100%;
+}
+
+/* Responsividade Mobile - Section 03 */
+.nossas-missoes{
+  padding: 40px 0;
+}
+
+/* Responsividade Mobile - Section 04 */
+.secao-de-contato{
+  padding: 30px 0px 0px 0px;
+}
+
+.img-contato{
+  display: none;
+}
+
+.titulo-no-banner{
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-com-texto{
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+/* Responsividade Mobile - Section 05 */
+.avaliacoes{
+  padding: 40px 0px;
+}
+
+/* Responsividade Mobile - Section 06 */
+.faq-section{
+  padding: 40px 0;
+}
+}
+
+/* Responsividade Mobile */
+@media screen and (max-width: 412px) {
+  
+
+/* Responsividade Mobile - Section 01 */
+.box-video-hero{
+  height: fit-content;
+}
+
+.conteudo-hero{
+  flex-direction: column;
+  height: 95vh;
+}
+
+.info-hero{
+  position: static;
+  max-width: 396px;
+  width: 100%;
+  order: 2;
+}
+
+.desc-hero {
+  margin-bottom: 0px;
+}
+
+.box-video-hero{
+  mask-image: none;
+}
+
+video{
+  position: static;
+  width: calc(100% + 32px);
+  margin: 0 -16px 0 -16px;
+  height: fit-content;
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 80%);
 }
 
 /* Responsividade Mobile - Section 02 */
 .quem-somos{
   padding: 40px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-video{
@@ -388,8 +539,8 @@ video{
   margin-left: auto;
 }
 
-.quem-somos{
-  justify-content: center;
+.sec-qs {
+  padding: 40px 0;
 }
 
 .info-qs{
@@ -399,33 +550,11 @@ video{
 }
 
 /* Responsividade Mobile - Section 03 */
-.nossas-missoes{
-  padding: 40px 0;
-}
-
 .card-group{
   justify-content: center;
 }
 
 /* Responsividade Mobile - Section 04 */
-.secao-de-contato{
-  padding: 30px 0px 0px 0px;
-}
-
-.img-contato{
-  display: none;
-}
-
-.banner-com-texto{
-  margin-bottom: 40px;
-}
-
-.titulo-no-banner{
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-
 .bloco-form{
   flex-wrap: wrap;
 }
@@ -438,8 +567,10 @@ form{
   max-width: 366px;
 }
 
-/* Responsividade Mobile - Section 05 */
-.avaliacoes{
-  padding: 40px 0px;
+
+/* Responsividade Mobile - Section 06 */
+.acordion{
+  width: 100%;
 }
+
 }

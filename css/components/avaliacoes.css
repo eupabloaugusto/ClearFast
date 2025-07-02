@@ -26,6 +26,7 @@
 .star{
   display: flex;
   margin-top: 8px;
+  gap: 6px;
 }
 .comentario {
   padding-bottom: 16px;
@@ -41,9 +42,6 @@
 @media screen and (max-width: 412px) {
 .foto{
   max-width: 130px;
-}
-.star{
-  gap: 6px;
 }
 
 }

@@ -178,3 +178,27 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+// Secção de FAQ - Accordion  ---------||--------
+function clickAccordion () {
+  const accordion = document.querySelectorAll(".acordion");
+
+  accordion.forEach(boxAccordion => {
+    boxAccordion.addEventListener('click', ()=> {
+      const descAcordion = boxAccordion.querySelector(".descricao-accordion");
+        descAcordion.classList.toggle("ativo");
+      
+      const icon = boxAccordion.querySelector(".titulo-accordion img");
+      const estaAtivo = descAcordion.classList.contains("ativo");
+      
+      if (estaAtivo){
+        icon.src = "./assets/accordion-aberto.svg";
+      }else{
+        icon.src = "./assets/accordion-fechado.svg";
+      }
+    });
+  });
+};
+
+clickAccordion();
+
